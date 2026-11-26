@@ -1,0 +1,9 @@
+/* FAQ styling */
+:root{--card:#fff;--text:#1b1e23;--muted:#555}
+.card{padding:14px 18px}
+.faq-item{border-top:1px solid #eee;padding:12px 0;outline:none}
+.faq-item:first-of-type{border-top:0}
+.faq-item .q{font-weight:600}
+.faq-item .a{max-height:0;overflow:hidden;transition:max-height .25s ease; color:#333}
+.faq-item[aria-expanded="true"] .a{max-height:120px}
+@media (prefers-reduced-motion: reduce){.faq-item .a{transition:none}}
